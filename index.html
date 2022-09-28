@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Data String Dan Number</title>
+</head>
+
+<body>
+    <script>
+        // Belum Konversi String Ke Number
+        let number1 = "2";
+        let number2 = 4;
+        let hasil = number1 + number2;
+        document.writeln("===========================================================");
+        document.writeln("<br>");
+        document.writeln("<b>Menampilkan Output Secara Langsung Sebelum Konversi String Ke Number</b>");
+        document.writeln(`<p> <b>Hasilnya : </b> <i>${hasil}</i> </p>`);
+        document.writeln("===========================================================");
+        document.writeln("<br>");
+
+        // Konversi String Ke Number
+        document.writeln("<br>");
+        document.writeln("===========================================================");
+        document.writeln("<br>");
+        document.writeln("<b>Menampilkan Output Secara Langsung Setelah Konversi String Ke Number</b>");
+        document.writeln(`<p> Parse Int : ${parseInt(23423.5645)}</p>`) //Integer Output : 23423
+        document.writeln(`<p> Parse Int : ${parseInt("1231.1231ewrwe")}</p>`); //Acak Output : 1231
+        document.writeln(`<p> Parse Int : ${parseInt("turdete")}</p>`); //String Output : NaN
+        document.writeln(`<p> Parse Float : ${parseFloat(14325.67568)}</p>`); //Integer Output : 14325.67568
+        document.writeln(`<p> Parse Float : ${parseFloat("12312335.6456etert")}</p>`); //Acak Output : 12312335.6456
+        document.writeln(`<p> Parse Float : ${parseFloat("erterts")}</p>`); //String Output : NaN
+        document.writeln(`<p> Number : ${Number(2323)}</p>`); //Integer Output : 2323
+        document.writeln(`<p> Number : ${Number("tezt")}</p>`); //String Output : NaN
+        document.writeln(`<p> Number : ${Number("1432utr")}</p>`); //Acak Output : NaN
+        document.writeln(`<p> Number : ${Number("45654.1231")}</p>`); //Integer dalam bentuk string Output : 45654.1231
+        document.writeln("===========================================================");
+        document.writeln("<br>");
+    </script>
+
+    <script src="stringNumber.js"></script>
+</body>
+
+</html>
